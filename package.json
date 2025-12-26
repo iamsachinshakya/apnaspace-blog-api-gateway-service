@@ -1,8 +1,9 @@
 {
-  "name": "user-service",
+  "name": "api-gateway",
   "version": "1.0.0",
-  "description": "A Node.js/Express user service for authentication, profile management, and user-related operations.",
+  "description": "A Node.js/Express API Gateway service for routing, rate-limiting, and proxying requests to microservices.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only --env-file=.env src/index.ts",
     "build": "tsc",
@@ -10,20 +11,26 @@
     "lint": "eslint . --ext .ts"
   },
   "keywords": [
-    "user",
-    "auth",
-    "authentication",
+    "api-gateway",
     "express",
     "typescript",
-    "mongodb",
-    "service"
+    "microservices",
+    "routing",
+    "rate-limit",
+    "proxy",
+    "redis",
+    "logging"
   ],
-  "author": "Your Name",
+  "author": "Your Name <youremail@example.com>",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/user-service.git"
+    "url": "https://github.com/yourusername/api-gateway.git"
   },
+  "bugs": {
+    "url": "https://github.com/yourusername/api-gateway/issues"
+  },
+  "homepage": "https://github.com/yourusername/api-gateway#readme",
   "packageManager": "pnpm@10.18.3",
   "dependencies": {
     "cors": "^2.8.5",
